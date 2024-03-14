@@ -5,6 +5,6 @@
 
 @layer components{
   body{
-    @apply w-screen dark:bg-gray-300 h-screen flex items-center justify-center transition-all duration-300 ease-in-out;
+    @apply w-screen dark:bg-gray-300 h-screen flex items-center justify-center;
   }
   }

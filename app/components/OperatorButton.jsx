@@ -29,12 +29,12 @@ export default function OperatorButton({ operator }) {
 
 
   if(operator === '=')return(
-    <div onClick={() => doArithMetic()}  className='text-white cursor-pointer p-3 border xl:min-w-[80px] flex items-center justify-center border-black dark:bg-[#cc0000] bg-[#ff9f0c]'>
+    <div onClick={() => doArithMetic()}  className='text-white dark:text-black cursor-pointer p-3 border flex items-center justify-center border-black dark:bg-[#cc0000] bg-[#ff9f0c] hover:bg-[#bd7200] dark:hover:bg-[#a50000] transition-all duration-300 ease-in-out'>
     {operator}
        </div>
   )
   return (
-    <div onClick={() => handleAddOperator(operator)}  className='text-white cursor-pointer p-3 border xl:min-w-[80px] flex items-center justify-center border-black bg-[#ff9f0c] dark:bg-[#cc0000] transition-all duration-300 ease-out'>
+    <div onClick={() => handleAddOperator(operator)}  className='text-white dark:text-black cursor-pointer  p-3 border flex items-center justify-center border-black bg-[#ff9f0c] hover:bg-[#bd7200] dark:bg-[#cc0000] dark:hover:bg-[#a50000] transition-all duration-300 ease-out'>
     {operator}
        </div>
   )

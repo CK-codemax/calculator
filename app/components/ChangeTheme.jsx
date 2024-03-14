@@ -22,12 +22,12 @@ export default function ChangeTheme() {
       {mounted &&
         (currentTheme === "dark" ? (
           <div
-            className="h-5 w-7 absolute top-0 sm:h-7 z-50 cursor-pointer bg-white hover:bg-[#1ce783] "
+            className="h-5 w-5 absolute rounded-full top-0 z-50 cursor-pointer bg-white hover:bg-[#1ce783] "
             onClick={() => setTheme("light")}
           />
         ) : (
           <div
-            className="h-5 w-7 absolute top-0 sm:h-7 z-50 cursor-pointer bg-black hover:bg-[#1ce783] "
+            className="h-5 w-5 absolute rounded-full top-0 z-50 cursor-pointer bg-black hover:bg-[#1ce783] "
             onClick={() => setTheme("dark")}
           />
         ))}
