@@ -22,14 +22,14 @@ export default function ChangeTheme() {
       {mounted &&
         (currentTheme === "dark" ? (
           <div
-            className="h-5 w-5 absolute rounded-full top-0 z-50 cursor-pointer bg-white hover:bg-[#1ce783] "
+            className="px-4 py-2 absolute rounded-full top-4 z-50 text-white cursor-pointer bg-gray-800 hover:bg-black hover:scale-105 transition-all duration-300 ease-out "
             onClick={() => setTheme("light")}
-          />
+          >Change Theme</div>
         ) : (
           <div
-            className="h-5 w-5 absolute rounded-full top-0 z-50 cursor-pointer bg-black hover:bg-[#1ce783] "
+            className="px-4 py-2 absolute rounded-full top-4 z-50 text-white cursor-pointer bg-gray-800 hover:bg-black hover:scale-105 transition-all duration-300 ease-out "
             onClick={() => setTheme("dark")}
-          />
+          >Change Theme</div>
         ))}
 
         {/* <div className="absolute top-0 w-[40px] p-[2px] z-50 bg-gray-700 rounded-full">

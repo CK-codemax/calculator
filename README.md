@@ -1,3 +1,13 @@
+This application is a calculator which is capable doing basic calculations. This app is uses NextJS the React framework. The particular reason for picking NextJS for this project is because I wanted this calculator to be themable. Using NextJS enabled me to use Next-themes to manage the switching of themes depending on the user's system preferences.
+
+For the design aspect, I made use of tailwindCSS and some of my predefined styles. The choice for TailwindCSS is to work much faster and build this application much faster.
+
+For state and management of state, I used a reducer which is much better than using multiple usestate hooks. I maintained the state using the React context api. My choice of the context api is because we need the state values in different components and passing these values as props won't be very ideal.
+
+All the buttons on this calculator except the % and the ± are fuly working and can carry out most simple arithmetic calculations accurately.
+
+The calculator is live on vercel and the link is attached to this repository.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

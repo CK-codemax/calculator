@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./themes/ThemeProvider";
 import { CalculatorProvider } from "./contexts/CalculatorContext";
+import ChangeTheme from "./components/ChangeTheme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <CalculatorProvider>
+            <ChangeTheme />
             {children}
           </CalculatorProvider>
         </Providers>
